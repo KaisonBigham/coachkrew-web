@@ -77,7 +77,7 @@ export default function PricingPage() {
                 </p>
                 <div className="mt-8 flex flex-col gap-3 sm:flex-row">
                   <Link
-                    href="/#cta"
+                    href="/signup"
                     className="inline-flex h-12 flex-1 items-center justify-center rounded-xl bg-sky-500 text-base font-bold text-slate-950 transition hover:bg-sky-400"
                   >
                     Start Building Your Team

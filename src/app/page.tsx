@@ -89,7 +89,7 @@ export default function Home() {
                 </p>
                 <div className="mt-10 flex flex-col gap-3 sm:flex-row sm:flex-wrap">
                   <Link
-                    href="/pricing"
+                    href="/signup"
                     className="inline-flex h-12 items-center justify-center rounded-xl bg-sky-500 px-6 text-center text-base font-bold text-slate-950 shadow-lg shadow-sky-500/25 transition hover:bg-sky-400"
                   >
                     Start Building Your Team
@@ -316,12 +316,12 @@ export default function Home() {
                     Additional teams: $20/month each
                   </li>
                 </ul>
-                <a
-                  href="#cta"
+                <Link
+                  href="/signup"
                   className="mt-8 flex h-12 w-full items-center justify-center rounded-xl bg-sky-500 text-base font-bold text-slate-950 transition hover:bg-sky-400"
                 >
                   Start Coaching Smarter
-                </a>
+                </Link>
               </article>
             </div>
           </div>
@@ -334,7 +334,7 @@ export default function Home() {
               Built for coaches who want more than a group chat.
             </h2>
             <Link
-              href="/pricing"
+              href="/signup"
               className="mt-10 inline-flex h-12 items-center justify-center rounded-xl bg-white px-10 text-base font-bold text-slate-950 transition hover:bg-slate-200"
             >
               Get Started

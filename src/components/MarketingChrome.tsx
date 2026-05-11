@@ -43,7 +43,7 @@ export function MarketingChrome({ children }: { children: ReactNode }) {
               </Link>
             </nav>
             <Link
-              href="/pricing"
+              href="/signup"
               className="inline-flex h-10 shrink-0 items-center justify-center rounded-lg bg-sky-500 px-4 text-sm font-bold text-slate-950 shadow-lg shadow-sky-500/20 transition hover:bg-sky-400"
             >
               Get Started

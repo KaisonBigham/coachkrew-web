@@ -121,8 +121,14 @@ export default function FeaturesPage() {
             </p>
             <div className="mt-8 flex flex-col justify-center gap-3 sm:flex-row sm:flex-wrap">
               <Link
-                href="/pricing"
+                href="/signup"
                 className="inline-flex h-12 items-center justify-center rounded-xl bg-sky-500 px-6 text-base font-bold text-slate-950 shadow-lg shadow-sky-500/25 transition hover:bg-sky-400"
+              >
+                Create your account
+              </Link>
+              <Link
+                href="/pricing"
+                className="inline-flex h-12 items-center justify-center rounded-xl border border-slate-600 bg-slate-900/60 px-6 text-base font-semibold text-white transition hover:border-sky-500/40 hover:bg-slate-800/80"
               >
                 View pricing
               </Link>
