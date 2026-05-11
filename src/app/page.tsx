@@ -1,4 +1,7 @@
+import Link from "next/link";
 import type { ReactNode } from "react";
+
+import { MarketingChrome } from "@/components/MarketingChrome";
 
 const FEATURES = [
   {
@@ -62,52 +65,7 @@ function PreviewRow({
 
 export default function Home() {
   return (
-    <div className="flex min-h-full flex-col bg-[#070b14] text-slate-100">
-      <header className="sticky top-0 z-50 border-b border-slate-800/90 bg-[#070b14]/95 backdrop-blur-md">
-        <div className="mx-auto flex max-w-6xl flex-wrap items-center justify-between gap-4 px-4 py-4 sm:px-6 lg:px-8">
-          <a
-            href="/"
-            className="text-xl font-extrabold tracking-tight text-white"
-          >
-            CoachKrew
-          </a>
-          <div className="flex flex-1 flex-wrap items-center justify-end gap-3 sm:gap-6">
-            <nav className="flex flex-wrap items-center justify-end gap-x-5 gap-y-2 text-sm font-semibold text-slate-400">
-              <a
-                href="#features"
-                className="transition-colors hover:text-sky-400"
-              >
-                Features
-              </a>
-              <a
-                href="#playbooks"
-                className="transition-colors hover:text-sky-400"
-              >
-                Playbooks
-              </a>
-              <a
-                href="#performance"
-                className="transition-colors hover:text-sky-400"
-              >
-                Performance
-              </a>
-              <a
-                href="#pricing"
-                className="transition-colors hover:text-sky-400"
-              >
-                Pricing
-              </a>
-            </nav>
-            <a
-              href="#pricing"
-              className="inline-flex h-10 shrink-0 items-center justify-center rounded-lg bg-sky-500 px-4 text-sm font-bold text-slate-950 shadow-lg shadow-sky-500/20 transition hover:bg-sky-400"
-            >
-              Get Started
-            </a>
-          </div>
-        </div>
-      </header>
-
+    <MarketingChrome>
       <main className="flex-1">
         {/* Hero */}
         <section className="relative overflow-hidden border-b border-slate-800/70">
@@ -130,18 +88,18 @@ export default function Home() {
                   playbooks.
                 </p>
                 <div className="mt-10 flex flex-col gap-3 sm:flex-row sm:flex-wrap">
-                  <a
-                    href="#pricing"
+                  <Link
+                    href="/pricing"
                     className="inline-flex h-12 items-center justify-center rounded-xl bg-sky-500 px-6 text-center text-base font-bold text-slate-950 shadow-lg shadow-sky-500/25 transition hover:bg-sky-400"
                   >
                     Start Building Your Team
-                  </a>
-                  <a
-                    href="#features"
+                  </Link>
+                  <Link
+                    href="/features"
                     className="inline-flex h-12 items-center justify-center rounded-xl border border-slate-600 bg-slate-900/60 px-6 text-base font-semibold text-white transition hover:border-sky-500/40 hover:bg-slate-800/80"
                   >
                     View Features
-                  </a>
+                  </Link>
                 </div>
               </div>
 
@@ -375,24 +333,15 @@ export default function Home() {
             <h2 className="text-3xl font-bold tracking-tight text-white sm:text-4xl">
               Built for coaches who want more than a group chat.
             </h2>
-            <a
-              href="#pricing"
+            <Link
+              href="/pricing"
               className="mt-10 inline-flex h-12 items-center justify-center rounded-xl bg-white px-10 text-base font-bold text-slate-950 transition hover:bg-slate-200"
             >
               Get Started
-            </a>
+            </Link>
           </div>
         </section>
       </main>
-
-      <footer className="border-t border-slate-800 bg-[#050810] py-10">
-        <div className="mx-auto flex max-w-6xl flex-col items-center justify-between gap-4 px-4 sm:flex-row sm:px-6 lg:px-8">
-          <p className="text-sm font-bold text-white">CoachKrew</p>
-          <p className="text-xs text-slate-500">
-            © {new Date().getFullYear()} CoachKrew. All rights reserved.
-          </p>
-        </div>
-      </footer>
-    </div>
+    </MarketingChrome>
   );
 }
